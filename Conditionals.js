@@ -29,8 +29,8 @@ let scoreInput = prompt('Please enter a score')
 let score = scoreInput
 switch (true) {
     case score>=90 && score<=100:
-        console.log('Your grade is A')
-        break
+        console.log('Your grade is A'); 
+        break; //в таких конструкциях желательно ставить ; хотя js этого не требует, но это хорошая практика, то же самое со строками ниже
     case score>=70 && score<=89:
         console.log('Your grade is B')
         break
@@ -143,6 +143,16 @@ What is the day today? Saturday
   } else {
     console.log(`${day} does not exist.`)
   }  */
+
+Можно было еще сделалать так как ты спрашивал через короткую версию ? : со всеми условиями, это выглядело бы так 
+
+let dayInput = 'SunDAy'
+  let day = dayInput.toLowerCase()
+  day === 'monday' || day === 'tuesday' || day === 'wednesday' || day === 'thursday' || day === 'friday'
+  ? console.log(`${day[0].toUpperCase() + day.slice(1)} is a working day.`)
+  : (day === 'saturday' || day === 'sunday') 
+  ? console.log(`${day[0].toUpperCase() + day.slice(1)} is a weekend.`) 
+  :console.log(`${day} does not exist.`)
   
  //Solution 2:
   /* let dayInput = prompt('What is the day today?')
