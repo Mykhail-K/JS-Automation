@@ -6,7 +6,7 @@
    /*let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.';
    const newText = text.replace(/[.,]/g,'')
    const array = newText.split(' ')
-   console.log(array) 
+   console.log(array);
    console.log(array.length) */
    
   //Solution 2:(For me this solution is better)
