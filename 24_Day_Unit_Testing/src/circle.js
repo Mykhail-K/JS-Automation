@@ -6,8 +6,11 @@
  * @function getArea return the area of the circle
  * @function getPerimeter return the perimeter of the circle
  */
-class Circle {
+ module.exports = class Circle {
     constructor(r){
+      if (r < 0) {
+        throw new Error ('[Error] Radius must be greater than 0');
+      }
       this.r = r;
     };
 
